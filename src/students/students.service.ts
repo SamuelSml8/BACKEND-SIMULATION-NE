@@ -97,7 +97,7 @@ export class StudentsService {
     if (!studentFound) {
       return {
         ok: false,
-        message: 'Task not found',
+        message: 'Student not found',
         data: null,
       };
     }
@@ -105,7 +105,7 @@ export class StudentsService {
     await studentFound.deleteOne();
     return {
       ok: true,
-      message: 'Task deleted succesfully',
+      message: 'Student deleted succesfully',
       data: studentFound,
     };
   }
