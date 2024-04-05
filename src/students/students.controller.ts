@@ -14,7 +14,7 @@ export class StudentsController {
   constructor(private readonly studentService: StudentsService) {}
 
   @Get()
-  getAllTasks() {
+  getAllStudents() {
     return this.studentService.findAll();
   }
 
